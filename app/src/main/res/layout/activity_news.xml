@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".news.NewsActivity">
+    <LinearLayout
+        android:layout_margin="4sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/NewsLogoSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:layout_gravity="center"
+            android:onClick="bookmarks"
+            android:src="@drawable/world_news"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="7">
+            <AutoCompleteTextView
+                android:id="@+id/Search_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionSearch"
+                android:layout_margin="4sp"
+                android:lines="1"
+                android:padding="8sp"
+                android:inputType="text"
+                android:singleLine="true"
+                android:hint="search"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <ImageView
+            android:id="@+id/search_button"
+            android:layout_width="wrap_content"
+            android:clickable="true"
+            android:layout_gravity="center"
+            android:layout_height="30sp"
+            android:onClick="buttonClicked"
+            android:src="@drawable/search"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/TVlistSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Showing 10 out of 1000 results"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/News_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

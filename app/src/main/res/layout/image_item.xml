@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/UploadLay"
+android:layout_width="match_parent"
+android:orientation="vertical"
+android:gravity="center_horizontal"
+android:layout_height="wrap_content">
+
+<ImageView
+    android:id="@+id/ImageProfile"
+    android:layout_width="130sp"
+    android:layout_height="130sp"
+    android:src="@drawable/profileimg"/>
+
+<TextView
+    android:id="@+id/TV_UpImg"
+    android:layout_width="130sp"
+    android:layout_height="wrap_content"
+    android:background="#C1555353"
+    android:gravity="center"
+    android:text="Upload Image"
+    android:textColor="#FFFFFF"
+    android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/warningText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="*Please Select any image"
+        android:textColor="#FF0000" />
+
+</LinearLayout>

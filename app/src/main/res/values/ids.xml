@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="upImg" type="id" />
+    <item name="scrollVw" type="id" />
+    <item name="ProfileImg" type="id" />
+    <item name="UploadText" type="id" />
+    <item name="login_passwordContainer" type="id" />
+    <item name="edit_word" type="id" />
+    <item name="login_phoneContainer" type="id" />
+    <item name="edit_company" type="id" />
+    <item name="edit_Mobile" type="id" />
+    <item name="login_MobileContainer" type="id" />
+    <item name="login_AddressContainer" type="id" />
+    <item name="edit_Address" type="id" />
+</resources>
