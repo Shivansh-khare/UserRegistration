@@ -1,4 +1,4 @@
-RoomWordsSample
+Registration APP
 ================
 
 This repository contains the finished sample code for the
